@@ -1,0 +1,97 @@
+@import 'styles/variables.scss';
+
+// card for "ACTION ITEMS, METRIC DATA"
+.sb-du-card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(159, 170, 185, 0.2);
+    border-radius: 2px;
+    min-height: 534px;
+}
+.sb-du-card h3 {
+    font-family: "Roboto Condensed";
+    font-size: 28px;
+    color: #474E58;
+}
+.sb-du-card span {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9FAAB9;
+    padding-right: 8px;
+}
+.sb-du-card input[type=checkbox] {
+    color: #14ADA8;
+}
+
+// Action items data
+.sb-du-list {
+    margin: 0px 0px;
+    padding: 0;
+}
+.sb-du-listitem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+li.sb-du-listitem > p:first-child {
+    padding-right: 1rem;
+    margin: 0;
+}
+li.sb-du-listitem > p:last-child {
+    margin: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #777E87;
+}
+li.sb-du-listitem.active{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(20, 173, 168, 0.25);
+    mix-blend-mode: normal;
+    padding-left: 2.5rem;
+}
+
+.sb-du-listitem.active > p:last-child {
+    margin: 0;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #008A70;   
+}
+
+
+// METRIC DATA
+.sb-du-data-item {
+    margin-right: 50px;
+    margin-bottom: 45px;
+    width: 100%
+}
+.sb-du-data-item div:first-child{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+    color: #B6C0CD;
+}
+
+.sb-du-data-item div:last-child{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #474E58;
+}

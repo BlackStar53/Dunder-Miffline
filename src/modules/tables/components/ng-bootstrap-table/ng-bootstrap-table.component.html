@@ -1,0 +1,45 @@
+<!-- Dashboard Tickets Reports Table start -->
+<div class="sb-du-reports-table-container table-responsive">
+    <table class="table sb-du-reports-table mx-auto">
+        <thead>
+            <tr>
+                <th scope="col">Ticket ID</th>
+                <th scope="col">Customer ID</th>
+                <th scope="col">Caller Name</th>
+                <th scope="col">Rep Name</th>
+                <th scope="col">Date Opened</th>
+                <th scope="col">Date Resolved</th>
+                <th scope="col">Status</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let report of reports" [ngClass]="{'active' : report.active === true}">
+                <td scope="row">{{ report.ticketID }}</td>
+                <td scope="row">{{ report.customerID }}</td>
+                <td scope="row">{{ report.callerNamme }}</td>
+                <td scope="row">{{ report.repName }}</td>
+                <td scope="row">{{ report.dateOpened }}</td>
+                <td scope="row">{{ report.dateResolved }}</td>
+                <td scope="row"><span class="sb-du-report-status-dot"></span>{{ report.status }}</td>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="sb-du-report-table-pagination d-flex justify-content-center">
+    <!-- <ngb-pagination [collectionSize]="total$ | async" [(page)]="countryService.page" [pageSize]="countryService.pageSize"></ngb-pagination> -->
+
+    <div class="sb-du-table-pagination-container d-flex flex-row align-items-center">
+        <div class="sb-du-nav-item">Prev</div>
+        <div class="sb-du-nav-item active">1</div>
+        <div class="sb-du-nav-item">2</div>
+        <div class="sb-du-nav-item">3</div>
+        <div class="sb-du-nav-item">4</div>
+        <div class="sb-du-nav-item">5</div>
+        <div class="sb-du-nav-item">6</div>
+        <div class="sb-du-nav-item">Next</div>
+    </div>
+</div>
+    
+<!-- Dashboard Tickets Reports Table start -->

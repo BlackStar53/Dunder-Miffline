@@ -1,0 +1,21 @@
+@import 'styles/variables.scss';
+
+/***** styles for left side bar *****/
+
+/**** <nav> tag start ****/
+.sb-nav-fixed #layoutSidenav #layoutSidenav_nav .sb-sidenav {
+    padding-top: 0px !important;
+}
+
+// color for sidebar
+.sb-sidenav-dark {
+    background: linear-gradient(135deg, #2D496F 1.05%, #016653 97.37%);
+}
+
+// sidebar logo image
+.sb-sidenav .sb-sidenav-menu .nav .sb-sidenav-menu-heading {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/**** <nav> tag end ****/

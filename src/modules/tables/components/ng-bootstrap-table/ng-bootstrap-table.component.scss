@@ -1,0 +1,153 @@
+@import 'styles/variables.scss';
+
+/*** Dashboard Tickets Reports Table start ***/
+thead > tr > th {
+    cursor: pointer;
+}
+table > tr > td {
+    cursor: pointer;
+}
+thead, tbody, tfoot, tr, td, th {
+    border-style: none !important;
+    white-space: nowrap;
+}
+.sb-du-reports-table-container {
+    background-color: #fff;
+    padding: 12px 0px 15px 0px;
+}
+.sb-du-reports-table th, td{
+    padding: 10px 50px !important;
+}
+.sb-du-reports-table td:nth-child(even){
+    mix-blend-mode: multiply;
+    border-right: 1px solid #EBEEF2;
+}
+.sb-du-reports-table th:first-child, td:first-child{
+    padding-left: 0px;
+}
+.sb-du-reports-table th:last-child, td:last-child{
+    padding-right: 0px;
+}
+.sb-du-reports-table th {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #474E58;
+}
+.sb-du-reports-table td {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #777E87;
+}
+.sb-du-reports-table th:first-child {
+    padding-left: 35px;
+}
+.sb-du-reports-table td:first-child {
+    padding-left: 35px;
+}
+.sb-du-reports-table th:last-child {
+    padding-right: 35px;
+}
+.sb-du-reports-table td:last-child {
+    padding-right: 35px;
+}
+.sb-du-reports-table .sb-du-report-status-dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #008A70;
+    margin-right: 8px;
+}
+.sb-du-reports-table tr.active{
+    background: rgba(20, 173, 168, 0.25);
+}
+.sb-du-reports-table tr.active td{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #008A70;
+}
+/*** Dashboard Tickets Reports Table end ***/
+
+/*** Dashboard Tickets Reports Table Pagination start ***/
+.sb-du-report-table-pagination {
+    margin-top: 25px;
+}
+
+.sb-du-table-pagination-container {
+    background-color: #fff;
+    height: fit-content;
+}
+
+.sb-du-table-pagination-container .sb-du-nav-item{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #9FAAB9;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    padding: 9px;
+    cursor: pointer;
+}
+.sb-du-table-pagination-container .sb-du-nav-item.active{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6D8CB6;
+    padding: 9px;
+    text-decoration: none;
+}
+.sb-du-table-pagination-container .sb-du-nav-item:first-child{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #9FAAB9;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+    padding: 12px 15px;
+    background: rgba(182, 192, 205, 0.8);
+    margin-right: 13px;
+}
+.sb-du-table-pagination-container .sb-du-nav-item:last-child{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6D8CB6;
+    margin-left: 13px;
+}
+
+@media screen and (max-width: 500px) {
+    .sb-du-table-pagination-container .sb-du-nav-item{
+        padding: 6px;
+    }
+    .sb-du-table-pagination-container .sb-du-nav-item.active{
+        padding: 6px;
+    }
+    .sb-du-table-pagination-container .sb-du-nav-item:first-child{
+        padding: 8px 12px;
+        background: rgba(182, 192, 205, 0.8);
+        margin-right: 8px;
+    }
+    .sb-du-table-pagination-container .sb-du-nav-item:last-child{
+        margin-left: 8px;
+    }
+    
+}
+/*** Dashboard Tickets Reports Table Pagination end ***/
+

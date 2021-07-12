@@ -1,0 +1,36 @@
+<!-- TICKETS REPORTS HEADER START -->
+<div class="d-flex flex-row justify-content-between align-items-center sb-du-main-header">
+    <sb-breadcrumbs *ngIf="!hideBreadcrumbs"></sb-breadcrumbs>
+    <div class="mb-4 d-flex flex-row-reverse align-items-center">
+        <!-- USER INFOR SECTION START -->
+        <div class="">
+            <a><div class="authentication-status">Log Out</div></a>
+            <a><div class="topbar-username">John&nbsp;<span style="font-weight: normal;">Doe</span></div></a>
+        </div>
+        <!-- USER INFOR SECTION END -->
+        <!-- TICKET STATUS DROPDOWN START -->
+        <div style="margin-right: 41px;" class="sb-du-status-container">
+            <div class="dropdown">
+                <button class="btn btn-sb-du-report-status dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span><span  class="status">Status:</span> Resolved</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href=""><input type="checkbox"/>Pending</a></li>
+                  <li><a class="dropdown-item" href=""><input type="checkbox"/>Ready for Approval</a></li>
+                  <li><a class="dropdown-item" href=""><input type="checkbox"/>Resolved</a></li>
+                  <li><a class="dropdown-item" href=""><input type="checkbox"/>Reopened</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- TICKET STATUS DROPDOWN END -->
+        <!-- DATE PICKER START -->
+        <div style="margin-right: 10px;" class="sb-du-datepicker-container">        
+            <div class="calendar sb-du-report-datepicker-wapper">
+                <button class="btn" (click)="d.toggle()" type="button" style="padding: 2px 2px;"><img src="/assets/img/datepicker-button.png"/></button>
+                <input class="" placeholder="May 01 2017 –   01 2017" name="dp"  ngbDatepicker #d="ngbDatepicker"></div>
+        </div>
+        <!-- DATE PICKER END -->
+    </div>
+    
+</div>
+<!-- TICKETS REPORTS HEADER END -->

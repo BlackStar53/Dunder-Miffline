@@ -1,0 +1,267 @@
+@import 'styles/variables.scss';
+
+//Global setting
+.row > * {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+// card for user information
+.sb-du-card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(159, 170, 185, 0.2);
+    border-radius: 2px;
+    margin: 2.5px 10px;
+}
+.sb-du-card h3 {
+    font-family: "Roboto Condensed";
+    font-size: 28px;
+    color: #474E58;
+}
+.sb-du-card span {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9FAAB9;
+    padding-right: 8px;
+}
+.sb-du-card input[type=checkbox] {
+    color: #14ADA8;
+}
+
+
+// Left side data
+.sb-du-data-item {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 220px;
+}
+.sb-du-data-item div:first-child{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+    color: #B6C0CD;
+}
+
+.sb-du-data-item div:last-child{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #474E58;
+}
+
+.sb-du-data-item-reverse {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 220px;
+}
+.sb-du-data-item-reverse div:first-child{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #474E58;
+}
+
+.sb-du-data-item-reverse div:last-child{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #9FAAB9;
+}
+
+
+/*** Status dropdown button start ***/
+// dropdown button
+.btn-sb-du-report-status {
+    min-width: 250px;
+    background-color: #fff;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #474E58;
+
+    background: #FFFFFF;
+    border: 1px solid #B6C0CD;
+    box-shadow: 0px 0px 10px rgba(159, 170, 185, 0.2);
+    border-radius: 2px;
+
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// droptdown button's arrow
+.dropdown-toggle::after {
+
+}
+
+// button status text
+.btn-sb-du-report-status span.status {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #777E87;
+}
+
+// dropdown menu
+.dropdown-menu-dark {
+    min-width: 250px;
+    background: #2D496F;
+    box-shadow: 0px 0px 10px rgba(159, 170, 185, 0.2);
+    border-radius: 2px;
+}
+
+// dropdown item <a> tag
+.dropdown-item {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.dropdown-item input[type=checkbox] {
+    margin-right: 10px;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;    
+    color: #22D7D1;
+}
+
+.dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;    
+    color: #22D7D1;
+}
+.dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
+    background-color: transparent !important;
+}
+.dropdown-menu-dark .dropdown-item {
+
+}
+/*** Status dropdown button end ***/
+
+
+/*** Submit note section start ***/
+.sb-du-submit-header {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+    color: #B6C0CD;
+}
+
+.sb-du-submit-content{
+    background: #FFFFFF;
+    border: 1px solid #B6C0CD;
+    border-radius: 2px;
+    width: 100%;
+    min-height: 100px;
+}
+
+.sb-du-submit-btn {
+    background-color: #6D8CB6;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    padding: 9px 21px 9px 21px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+/*** Submit note section end ***/
+
+/*** Notification section start ***/
+.sb-du-gray-card {
+    background: #EBEEF2;
+    box-shadow: 0px 0px 10px rgba(159, 170, 185, 0.2);
+    border-radius: 2px;
+    margin: 2.5px 10px;
+    padding: 12px 25px 25px 25px;
+}
+
+.sb-du-gray-card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.sb-du-gray-card-header span:first-child {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #777E87;
+
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+.sb-du-gray-card-header span:last-child {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #777E87;
+
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+.sb-du-gray-card-body {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #474E58;
+}
+/*** Notification section start ***/
+
+// @media screen and (max-width: 500px) {
+//     .sb-du-data-item div:first-child{
+//         font-size: 14px;
+//         line-height: 16px;
+//     }
+    
+//     .sb-du-data-item div:last-child{
+//         font-size: 10px;
+//         line-height: 12px;
+//     }
+// }

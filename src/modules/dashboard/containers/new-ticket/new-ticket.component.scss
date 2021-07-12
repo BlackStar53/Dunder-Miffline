@@ -1,0 +1,100 @@
+@import 'styles/variables.scss';
+
+//Global setting
+.row > * {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+// card for new ticket
+.sb-du-card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(159, 170, 185, 0.2);
+    border-radius: 2px;
+    margin: 2.5px 10px;
+}
+
+/*** new ticket form elements start ***/
+.sb-du-input-group{
+    padding: 0px 40px 40px 0px;
+}
+.sb-du-input{
+    min-width: 248px;
+    border: 1px solid #B6C0CD;
+    padding: 9px 15px;
+    margin-bottom: 10px;
+}
+.sb-du-search-icon{
+    margin-left: -40px;
+}
+.sb-du-input-label{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #474E58;
+}
+.sb-du-newticket-subject {
+    min-width: 248px;
+    min-height: 110px;
+    margin-top: 10px;
+    border-radius: 0px;
+    border: 1px solid #B6C0CD;
+}
+.sb-du-newticket-details {
+    min-width: 536px;
+    min-height: 110px;
+    margin-top: 10px;
+    border-radius: 0px;
+    border: 1px solid #B6C0CD;
+}
+/*** new ticket form elements end ***/
+
+// Save ticket button
+.sb-du-save-ticket {
+    background-color: #008A70;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #fff;
+    padding: 12px 27px 15px 27px;
+    text-decoration: none;
+    cursor: pointer;    
+}
+
+.sb-du-newticket-input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.sb-du-newticket-input-middle-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 1200px){
+    .sb-du-newticket-input-container {
+        display: block;
+    }
+    .sb-du-newticket-details {
+        min-width: 248px;
+    }
+}
+
+@media screen and  (max-width : 670px) {
+    .sb-du-card {
+        margin: 20px 5px !important;
+    }
+    .sb-du-newticket-input-middle-container{
+        display: block;
+    }
+    .sb-du-search-icon{
+        display: none;
+    }
+}

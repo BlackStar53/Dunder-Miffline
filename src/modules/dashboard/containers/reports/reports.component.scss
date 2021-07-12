@@ -1,0 +1,26 @@
+@import 'styles/variables.scss';
+
+// card for "ACTION ITEMS, METRIC DATA"
+.sb-du-card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(159, 170, 185, 0.2);
+    border-radius: 2px;
+    min-height: 534px;
+}
+.sb-du-card h3 {
+    font-family: "Roboto Condensed";
+    font-size: 28px;
+    color: #474E58;
+}
+.sb-du-card span {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9FAAB9;
+    padding-right: 8px;
+}
+.sb-du-card input[type=checkbox] {
+    color: #14ADA8;
+}

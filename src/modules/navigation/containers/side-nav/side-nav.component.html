@@ -1,0 +1,10 @@
+<nav class="sb-sidenav accordion" id="sidenavAccordion" [ngClass]="sidenavStyle">
+    <div class="sb-sidenav-menu">
+        <div class="nav">
+            <ng-container *ngFor="let section of sideNavSections"
+                ><div class="sb-sidenav-menu-heading d-flex flex-row"><img src="/assets/img/sidebar_logo.png" class="img-fluid mx-auto"/>"</div>
+                <ng-container *ngFor="let item of section.items"><sb-side-nav-item [sideNavItem]="sideNavItems[item]"></sb-side-nav-item></ng-container
+            ></ng-container>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,30 @@
+@import 'styles/variables.scss';
+
+.nav-link{
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+}
+
+.nav-link.active{
+    font-weight: bold;
+    color: #fff;
+}
+
+// Side nav item
+.sb-sidenav .sb-sidenav-menu .nav .nav-link {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 25px;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.sb-sidenav .sb-sidenav-menu .nav .nav-link:active {
+    background-color: red;
+}

@@ -1,0 +1,27 @@
+@import 'styles/variables.scss';
+
+.bg-dunder {
+    background-image: url("../../../../assets/img/Login-BG.png");
+
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+
+    /* Full height */
+    // height: 100%; 
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+}
+
+@media screen and (max-width: 700px) {
+    .bg-dunder {
+        background-image: url("../../../../assets/img/Login-BG1.png");
+    
+        background-position: center center;
+        background-repeat:  no-repeat;
+        background-attachment: fixed;
+        background-size:  cover;
+    }
+}

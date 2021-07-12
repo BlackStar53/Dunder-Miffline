@@ -1,0 +1,41 @@
+@import 'styles/variables.scss';
+
+.breadcrumb-title {
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    color: #6D8CB6;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.breadcrumb-item.active{
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: -1px;
+    color: #6D8CB6;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6D8CB6;
+    content: "–";
+}
+
+@media screen and (max-width : 768px) {
+    .breadcrumb-title {
+        font-size: 26px;
+    }
+    
+    .breadcrumb-item.active{
+        font-size: 26px;
+        letter-spacing: -1px;
+    }
+    
+    .breadcrumb-item + .breadcrumb-item::before {
+        padding-right: 0.5rem;
+        content: "–";
+    }
+}

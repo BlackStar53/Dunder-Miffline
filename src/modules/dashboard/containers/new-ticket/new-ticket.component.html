@@ -1,0 +1,51 @@
+<!-- NEW TICKET PAGE START -->
+<sb-layout-dashboard>
+    <sb-dashboard-head-details title="Dashboard" [hideBreadcrumbs]="false"></sb-dashboard-head-details>
+    <!-- NEW TICKET FORM START -->
+    <div style="margin-top: 25px;">
+        <div class="sb-du-card" style="margin: 25px 40px 46px 20px; padding: 35px 35px 30px;">
+            <div class="sb-du-newticket-input-container">
+                <div class="sb-du-newticket-input-middle-container">
+                    <!-- CUSTOMER ID -->
+                    <div class="sb-du-input-group" style="position: relative;" style="margin-right: 21px;">
+                        <div><input type="text" class="sb-du-input"/><fa-icon class="sb-du-search-icon" [icon]='["fas", "search"]'></fa-icon></div>
+                        <div><Label class="sb-du-input-label">Customer ID</Label></div>
+                    </div>
+
+                    <!-- CONTACT NAME -->
+                    <div class="sb-du-input-group">
+                        <div><input type="text" class="sb-du-input" placeholder="First & Last Name"/></div>
+                        <div><Label class="sb-du-input-label">Contact Name</Label></div>
+                    </div>
+                </div>
+                <!-- CONTACT PHONE -->
+                <div class="sb-du-input-group">
+                    <div><input type="text" class="sb-du-input" placeholder="(&nbsp;&nbsp;&nbsp;&nbsp;) &nbsp;&nbsp;&nbsp;&nbsp; -"/></div>
+                    <div><Label class="sb-du-input-label">Contact Phone</Label></div>
+                </div>
+            </div>
+
+            <div class="sb-du-newticket-input-middle-container">
+                <!-- CUSTOMER ID -->
+                <div class="sb-du-input-group">
+                    <div><Label class="sb-du-input-label">Subject</Label></div>
+                    <div><textarea class="sb-du-newticket-subject" placeholder="Enter a subject…"></textarea></div>
+                </div>
+
+                <!-- CONTACT NAME -->
+                <div class="sb-du-input-group">
+                    <div><Label class="sb-du-input-label">Details</Label></div>
+                    <div><textarea class="sb-du-newticket-details" placeholder="Enter details here…"></textarea></div>
+                </div>
+            </div>
+        </div>
+        <div style="padding-left: 82px;">
+            <a class="sb-du-save-ticket">Save Ticket</a>
+        </div>
+    </div>
+    <!-- NEW TICKET FORM END -->
+    
+    
+</sb-layout-dashboard>
+
+<!-- NEW TICKET PAGE END -->

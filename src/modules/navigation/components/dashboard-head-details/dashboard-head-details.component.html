@@ -1,0 +1,19 @@
+<!-- TICKETS REPORTS HEADER START -->
+<div class="d-flex flex-row justify-content-between align-items-center sb-du-main-header">
+    <sb-breadcrumbs *ngIf="!hideBreadcrumbs"></sb-breadcrumbs>
+    <div class="mb-4 d-flex flex-row-reverse align-items-center">
+        <div class="">
+            <a><div class="authentication-status">Log Out</div></a>
+            <a><div class="topbar-username">John&nbsp;<span style="font-weight: normal;">Doe</span></div></a>
+        </div>
+        <div style="margin-right: 41px;" class="sb-du-btn-container">
+            <a class="btn-sd-du-success" routerLink="/dashboard/tickets/new-ticket">New Tickets</a>
+        </div>
+        <div style="margin-right: 40px;" class="sb-du-search-container">
+            <input class="sb-du-search-input" type="text" placeholder="Search for Ticket ID…"/>
+            <fa-icon class="db-du-search-icon" [icon]='["fas", "search"]'></fa-icon>
+        </div>
+    </div>
+    
+</div>
+<!-- TICKETS REPORTS HEADER END -->
